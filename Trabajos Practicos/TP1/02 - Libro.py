@@ -22,5 +22,5 @@ class Libro:
             return "No se puede devolver un libro que no fue prestado"
         
 elSecreto = Libro("El secreto", "Rhonda Byrne", 2006, True)
-elSecreto.solicitar_prestamo()
-elSecreto.devolver_libro(8)
+print(elSecreto.solicitar_prestamo())
+print(elSecreto.devolver_libro(8))
