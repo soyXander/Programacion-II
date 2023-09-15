@@ -15,8 +15,10 @@ class Libro:
     def devolver_libro(self, dias):
         if self.disponible == False:
             if dias > 7:
+                self.disponible = True
                 return f"Multa de $100 por retraso de {dias} días en la devolución"
             else:
+                self.disponible = True
                 return "El libro a sido devuelto"
         else:
             return "No se puede devolver un libro que no fue prestado"

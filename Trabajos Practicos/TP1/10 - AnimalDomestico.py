@@ -8,7 +8,7 @@ class AnimalDomestico:
     def sonido(self):
         if self.especie.casefold() == "perro":
             return "Woof woof"
-        elif self.especie.casefold() == "gatos":
+        elif self.especie.casefold() == "gato":
             return "Meow meow"
         else:
             return "Sonido caracteristico del animal no registrado"
@@ -21,7 +21,7 @@ class AnimalDomestico:
                 return "El perro es adulto"
             else:
                 return "El perro es joven"
-        elif self.especie.casefold() == "gatos":
+        elif self.especie.casefold() == "gato":
             if self.edad > 180:
                 return "El gato es anciano"
             elif self.edad > 84:
