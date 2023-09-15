@@ -14,7 +14,7 @@ class Pelicula:
         else:
             return f"La pelicula {self.titulo} no es de tu genero favorito"
             
-rambo = Pelicula("Rambo: primera sangre", "Ted Kotcheff", 97, "Accion")
+rambo = Pelicula("Rambo: primera sangre", "Ted Kotcheff", 97, "Acción")
 
 rambo.reproducir()
 print(rambo.recomendar("Acción"))

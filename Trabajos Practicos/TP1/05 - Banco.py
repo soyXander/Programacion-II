@@ -22,5 +22,6 @@ class Cliente:
     
 santander = Banco("Santander", 0, 10)
 santander.abrirCuenta("Gabriel", "Romero", 33123456, 100)
+
 for c in santander.clientes:
     print(c)
