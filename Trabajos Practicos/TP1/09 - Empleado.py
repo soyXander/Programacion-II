@@ -11,7 +11,7 @@ class Empleado:
     
     def cambiarCargo(self, nuevoCargo):
         self.cargo = nuevoCargo
-        return f"El nuevo cargo del empleado {self.nombre} se cambio a {self.cargo}"
+        return f"El nuevo cargo del empleado {self.nombre} es {self.cargo}"
     
 emp1 = Empleado("Carlos", 29, 2300, "Supervisor")
 print(emp1.aumentarSalario(30))

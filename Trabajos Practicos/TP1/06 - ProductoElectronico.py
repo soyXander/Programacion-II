@@ -1,10 +1,10 @@
 class ProductoElectronico:
-    def __init__(self, nombre, marca, precio, disponibilidad, garantia = True):
+    def __init__(self, nombre, marca, precio):
         self.nombre = nombre
         self.marca = marca
         self.precio = precio
-        self.disponibilidad = disponibilidad
-        self.garantia = garantia
+        self.disponibilidad = True
+        self.garantia = True
         
     def comprar(self):
         if self.disponibilidad == True:
@@ -25,7 +25,7 @@ class ProductoElectronico:
     def __str__(self):
         return f"Producto: {self.nombre} - Marca: {self.marca} - Precio: {self.precio} - Disponible: {self.disponibilidad}"
 
-ventilador = ProductoElectronico("Ventilador", "Liliana", 50000, True, True)
+ventilador = ProductoElectronico("Ventilador", "Liliana", 50000)
 print(ventilador)
 print(ventilador.comprar())
 print(ventilador)
