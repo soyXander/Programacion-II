@@ -5,18 +5,18 @@ class Coche:
         self.año = año
         self.velocidad_actual = velocidad_actual
         
-    def acelerar(self, velocidad):
+    def acelerar(self, velocidad = 1):
         self.velocidad_actual += velocidad
         
-    def frenar(self, velocidad):
+    def frenar(self, velocidad = 1):
         if self.velocidad_actual > 0 and velocidad < self.velocidad_actual:
             self.velocidad_actual -= velocidad
         else:
             self.velocidad_actual = 0
 
-c = Coche("Audi", "A5", 2014, 120)
-print(c.velocidad_actual)
-c.acelerar(10);
-print(c.velocidad_actual)
-c.frenar(200)
-print(c.velocidad_actual)
+audi = Coche("Audi", "A5", 2014, 120)
+print(audi.velocidad_actual)
+audi.acelerar(10);
+print(audi.velocidad_actual)
+audi.frenar(200)
+print(audi.velocidad_actual)
